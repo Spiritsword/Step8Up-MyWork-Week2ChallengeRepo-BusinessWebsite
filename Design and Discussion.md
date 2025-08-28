@@ -4,9 +4,59 @@
 
 Build on Week 1 challenge, developing personal profile page into a business website.
 
-Fonts and colour scheme to remain the same, justified by the same reasoning.
+## Business Vision
 
-#### WEEK1 CHALLENGE DESIGN AND DISCUSSION
+Name of business: Spiritsword Communication
+
+Growing out of personal skills, experience and interests.
+
+Unified by art, music, marketing, maths, programming and marketing background, with Christian faith.
+
+# Communication services offered in 3 areas:
+
+Evangelism
+(online mini-games, tracts, videos)
+
+Teaching
+(online mini-games, videos)
+(maths teaching)
+
+Marketing
+(websites and web-marketing with Christian ethos)
+
+## Design
+
+Fonts and colour scheme to remain the same, justified by the same reasoning as in Week 1 (below).
+
+## Colour palette.
+
+Light blue (primary)
+Dark blue (secondary)
+Orange (accent)
+Plus white (background/text), dark grey (text)
+
+## Fonts
+
+Sans serif: Tahoma (titles) - "title font"
+Serif: Georgia (body text) - "body font"
+
+# Pages
+
+Home, Evangelism, Teaching, Marketing, About, Contact
+
+### PLANNED FLOW
+
+**Step 1**: Review first wireframe
+**Step 2**: Design wireframes for other pages.
+**Step 3**: Set up project folder and create multiple HTML pages (e.g., index.html, about.html, contact.html).
+**Step 4**: Use **CSS variables** to handle consistent color schemes and optionally other properties like borders and spacing.
+**Step 5**: Implement layout using **Flexbox**. Apply flexbox alignment techniques to position elements as needed.
+5. **Step 6**: Style contact page with a **contact form** and ensure it adapts well to different screen sizes.
+6. **Step 7**: Incorporate **pseudo-elements or pseudo-classes** into styling for interactive or decorative effects.
+7. **Step 8**: Test website on different devices and screen sizes to ensure it is fully responsive.
+
+
+#### WEEK1 CHALLENGE DESIGN AND DISCUSSION (COPIED ACROSS FOR INFORMATION)
 
 ### INITIAL THOUGHTS
 
