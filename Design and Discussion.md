@@ -44,9 +44,18 @@ Serif: Georgia (body text) - "body font"
 
 Home, Evangelism, Teaching, Marketing, About, Contact
 
+# Misc TODOS from Session 3 introduction to challenge
+
+Style unordered list list items with pseudo-elements?
+Variables for borders and drop shadows?
+Contact page styled (MDN and other sites will give examples)
+Lorum Ipsum or Chat GPT for content (or Lorum # words and tab)
+Start from scratch (code?)
+One CSS page across whole thing
+
 ### PLANNED FLOW
 
-**Step 1**: Review first wireframe
+**Step 1**: Review first wireframe.
 **Step 2**: Design wireframes for other pages.
 **Step 3**: Set up project folder and create multiple HTML pages (e.g., index.html, about.html, contact.html).
 **Step 4**: Use **CSS variables** to handle consistent color schemes and optionally other properties like borders and spacing.
