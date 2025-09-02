@@ -12,6 +12,11 @@ html {
     --bodytext-font-family: 'Georgia', serif;
 }
 
+p {
+    font-size: 1vw;
+    padding: 5% 5% 0 0; 
+}
+
 html {
             font-size: 2vw;
             background-color: white;
@@ -40,7 +45,7 @@ nav {
 }
 
 main {
-            padding: 20vw 1% 1% 1%;
+            padding: 1% 1% 1% 1%;
 }
 
 nav h6 {
@@ -63,13 +68,41 @@ nav {
             padding: 0 2vw
 }
 
+.servicearticle {
+    flex: 1 1 20%;
+}
+
+.articlecontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+}
+
 .midrow {
-    height: 200px
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bottomrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--title-font-family);
 }
+
+img {
+    width: 50%;
+    padding: 5% 5% 0 0; 
+}
+
+
 
 a {
     text-decoration: unset;
