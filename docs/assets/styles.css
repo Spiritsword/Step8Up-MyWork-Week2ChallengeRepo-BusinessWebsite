@@ -40,8 +40,12 @@ nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+.sitetitle {
+            flex-basis: 33%;
 }
 
 main {
@@ -52,20 +56,17 @@ nav h6 {
             color: lightblue;
         }
 
-nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-}
-
 .pagelinks {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            align-items: center;
+            flex-basis: 33%;
 }
 
-.pagelink {
-            padding: 0 2vw
+.search {
+        flex-basis: 33%;
+        text-align: right
 }
 
 .toprow {
@@ -97,19 +98,11 @@ nav {
     align-items: top;
 }
 
-.midrow {
+.midrow, .bottomrow {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 1%
-}
-
-.bottomrow {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
+    padding: 2%
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -121,8 +114,20 @@ h1 {
 }
 
 img {
-    width: 50%;
+
     padding: 5% 5% 0 0; 
+}
+
+.servicearticle img {
+                    width: 50%;
+}
+
+.news img {
+            width: 33%;
+}
+
+.contactushomepage img {
+            width: 33%;
 }
 
 .pagebanner img {
