@@ -114,7 +114,6 @@ h1 {
 }
 
 img {
-
     padding: 5% 5% 0 0; 
 }
 
@@ -126,8 +125,12 @@ img {
             width: 33%;
 }
 
-.contactushomepage img {
-            width: 33%;
+.news {
+        flex-basis: 50%
+}
+
+.contactushomepage {
+            flex-basis: 50%
 }
 
 .pagebanner img {
@@ -135,6 +138,15 @@ img {
     padding: 0;
 }
 
+input, textarea {
+                border: 0.1rem solid orangered;
+                font-family: "Georgia", serif;
+                font-size: 1rem;
+                border-radius: 0.4rem;
+                width: 100%;
+                font-weight: 400;
+                color: darkblue;
+}
 
 a {
     text-decoration: unset;
