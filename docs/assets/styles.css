@@ -96,11 +96,12 @@ main {
 }
 
 .midrow, .bottomrow, .midandbottomrow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2%
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-around;
+                                        padding: 2vw
 }
+
 
 /* Special formats in particular locations */
 
@@ -114,6 +115,10 @@ main {
                     align-self: flex-start;
 }
 
+.descriptionarticlecontent {
+    padding: 2vw 0 0 0
+}
+
 .servicerightpage {
     flex-basis: 66%;
 }
@@ -123,11 +128,15 @@ main {
 }
 
 .servicearticle img {
-                    width: 50%;
+    width: 50%;
 }
 
 .casestudyarticle img {
-                    width: 25%;
+    width: 25.5%;
+}
+
+.casestudyarticle {
+    padding: 0 0 2vw 0
 }
 
 .news {
@@ -139,7 +148,11 @@ main {
 }
 
 .contactushomepage {
-            flex-basis: 66%
+            flex-basis: 66%;
+}
+
+.contactussmall {
+                padding: 2vw 0 0 0
 }
 
 input, textarea {
@@ -157,6 +170,7 @@ form {
                 width: 100%;
                 font-weight: 400;
                 color: darkblue;
+                padding: 2vw 0 0 0;
 }
 
 .copyright {
@@ -170,6 +184,7 @@ form {
     flex-direction: row;
     justify-content: space-around;
     align-items: top;
+    padding: 2vw 0 0 0
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -181,10 +196,14 @@ h1 {
 }
 
 img {
-    padding: 5% 5% 1.4% 0; 
+    padding: 0% 2vw 1vw 0; 
 }
 
 a {
     text-decoration: unset;
     color: unset;
+}
+
+p {
+    padding: 0 2vw 1vw 0
 }
