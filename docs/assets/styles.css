@@ -36,6 +36,7 @@ header, footer {
                     padding: 2%
                 }
 
+                
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -44,17 +45,15 @@ nav {
   align-items: center;
 }
 
-.sitetitle {
-            flex-basis: 33%;
-}
 
-main {
-            padding: 0;
-}
 
 nav h6 {
             color: lightblue;
         }
+
+.sitetitle {
+            flex-basis: 33%;
+}
 
 .pagelinks {
             display: flex;
@@ -69,6 +68,10 @@ nav h6 {
         text-align: right
 }
 
+main {
+            padding: 0;
+}
+
 .toprow {
             position: relative;
             text-align: center;
@@ -79,6 +82,11 @@ nav h6 {
             z-index: 1;
 }
 
+.pagebanner img {
+    width: 100%;
+    padding: 0;
+}
+
 .pagetitle {
             z-index: 100;
             position: absolute;
@@ -87,55 +95,51 @@ nav h6 {
             transform: translate(-50%, -50%);
 }
 
-.servicearticle {
-    flex: 1 1;
-}
-
-.articlecontent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: top;
-}
-
-.midrow, .bottomrow {
+.midrow, .bottomrow, .midandbottomrow {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 2%
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--title-font-family);
+/* Special formats in particular locations */
+
+.descriptionarticle {
+    flex-basis: 33%;
 }
 
-h1 {
-    font-size: 3vh
+.descriptionarticle img {
+                    width: 50%;
+                    float: left;
+                    align-self: flex-start;
 }
 
-img {
-    padding: 5% 5% 0 0; 
+.servicerightpage {
+    flex-basis: 66%;
+}
+
+.servicearticle, .casestudyarticle {
+    flex: 1 1;
 }
 
 .servicearticle img {
                     width: 50%;
 }
 
+.casestudyarticle img {
+                    width: 25%;
+}
+
+.news {
+        flex-basis: 33%
+}
+
 .news img {
             width: 33%;
 }
 
-.news {
-        flex-basis: 50%
-}
-
 .contactushomepage {
-            flex-basis: 50%
-}
-
-.pagebanner img {
-    width: 100%;
-    padding: 0;
+            flex-basis: 66%
 }
 
 input, textarea {
@@ -155,11 +159,32 @@ form {
                 color: darkblue;
 }
 
+.copyright {
+            text-align: center;
+}
+
+/* General formatting */
+
+.articlecontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font-family);
+}
+
+h1 {
+    font-size: 4vw
+}
+
+img {
+    padding: 5% 5% 1.4% 0; 
+}
+
 a {
     text-decoration: unset;
     color: unset;
-}
-
-.copyright {
-            text-align: center;
 }
