@@ -79,7 +79,7 @@ main {
 }
 
 .pagebanner {
-            z-index: 1;
+                z-index: 1;
 }
 
 .pagebanner img {
@@ -88,11 +88,11 @@ main {
 }
 
 .pagetitle {
-            z-index: 100;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+                z-index: 100;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
 }
 
 .midrow, .bottomrow, .midandbottomrow {
@@ -106,96 +106,98 @@ main {
 /* Special formats in particular locations */
 
 .descriptionarticle {
-    flex-basis: 33%;
+                        flex-basis: 33%;
 }
 
 .descriptionarticle img {
-                    width: 50%;
-                    float: left;
-                    align-self: flex-start;
+                            width: 50%;
+                            float: left;
+                            align-self: flex-start;
 }
 
 .descriptionarticlecontent {
-    padding: 2vw 0 0 0
+                                padding: 2vw 0 0 0
 }
 
 .servicerightpage {
-    flex-basis: 66%;
+                    flex-basis: 66%;
 }
 
 .servicearticle, .casestudyarticle {
-    flex: 1 1;
+                                        flex: 1 1;
 }
 
 .servicearticle img {
-    width: 50%;
+                        width: 50%;
 }
 
 .casestudyarticle img {
-    width: 25.5%;
+                        width: 25.5%;
 }
 
 .casestudyarticle {
-    padding: 0 0 2vw 0
+                    padding: 0 0 2vw 0
 }
 
 .news, .founderstory {
-        flex-basis: 33%
+                        flex-basis: 33%
 }
 
 .news .articlecontent img {
-            width: 30%;
+                            width: 30%;
 }
 
 .founderstory .articlecontent img {
-            width: 30%;
+                                    width: 30%;
 }
 
 .ourvisionarticle img {
-            width: 16.5%;
+                        width: 16.5%;
 }
 
 .founderstory img {
-            width: 50%;
+                    width: 50%;
 }
 
 .contactushomepage {
-            flex-basis: 66%;
+                    flex-basis: 66%;
 }
 
-.contactussmall {
-                padding: 2vw 0 0 0
+.contactussmall, .contactusbig {
+                                padding: 2vw 0 0 0
 }
 
-input, textarea {
-                border: 0.1rem solid orangered;
-                font-size: 0.8rem;
-                width: 100%;
-                font-weight: 400;
-                color: darkblue;
-                border-radius: 0.4rem;
+.contactusbig {
+                flex-basis: 100%;
+}
 
+input, textarea, fieldset {
+                    border: 0.1rem solid orangered;
+                    font-size: 0.6rem;
+                    width: 100%;
+                    color: darkblue;
+                    border-radius: 0.4rem;
 }
 
 form {
-                font-family: "Georgia", serif;
-                font-size: 0.6rem;
-                width: 100%;
-                font-weight: 400;
-                color: darkblue;
-                padding: 2vw 0 0 0;
+        font-family: "Georgia", serif;
+        font-size: 0.6rem;
+        width: 100%;
+        font-weight: 400;
+        color: darkblue;
+        padding: 2vw 0 0 0;
 }
 
 .link   {
-                        font-family: 'Tahoma', sans-serif;
-                        padding: 2%;
-                        font-weight: bold;
-                        border-radius: 10 rem;
-                        width: 20%;
-                        float: right;
-                        color: darkblue;
-                        background-color: lightblue;
-                        border: none                        
+            font-family: 'Tahoma', sans-serif;
+            padding: 2%;
+            font-weight: bold;
+            border-radius: 10 rem;
+            width: 20%;
+            float: right;
+            color: darkblue;
+            background-color: lightblue;
+            border: none                        
         }
 
 .copyright {
@@ -205,15 +207,15 @@ form {
 /* General formatting */
 
 .articlecontent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: top;
-    padding: 2vw 0 0 0
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: top;
+                    padding: 2vw 0 0 0
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--title-font-family);
+                        font-family: var(--title-font-family);
 }
 
 h1 {
@@ -221,15 +223,19 @@ h1 {
 }
 
 img {
-    margin: 0% 2vw 1vw 0;
-    border-style: solid;
-    border-width: thin; 
-    border-color: orangered;
+        margin: 0% 2vw 1vw 0;
+        border-style: solid;
+        border-width: thin; 
+        border-color: orangered;
 }
 
 a {
     text-decoration: unset;
     color: unset;
+}
+
+a:hover {
+            color: orangered;
 }
 
 p {
