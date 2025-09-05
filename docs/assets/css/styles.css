@@ -53,11 +53,11 @@ nav {
             flex-basis: 33%;
 }
 
-/* Page links are next, within a sub-flex-box. */
+/* Page links are next, within a sub-flex-box. They are aligned centrally */
+/* Wrapping is not permitted, to save the navigation bar becoming chaotic. */
 
 .pagelinks {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
             flex-basis: 50.5%;
@@ -107,6 +107,8 @@ main {
 The service pages have the middle and bottom rows melded and then split vertically (using a flexbox),
 in the proportion 1:2. The right vertical box (class=midandbottomrow) is split horizontally between the case study (above)
 The left box contains a description of the service.
+
+The boxes use the flexbox justification, "space-around".
 */
 
 .midrow, .bottomrow, .midandbottomrow {
