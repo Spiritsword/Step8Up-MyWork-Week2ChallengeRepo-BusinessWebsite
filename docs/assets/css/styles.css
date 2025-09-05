@@ -6,7 +6,7 @@
 
 html {
     --primary-color: navy;
-    --secondary-color: lightblue;;
+    --secondary-color: lightblue;
     --accent-color: orangered;
     --title-font-family: 'Tahoma', sans-serif;
     --bodytext-font-family: 'Georgia', serif;
@@ -60,11 +60,11 @@ nav h6 {
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-            flex-basis: 33%;
+            flex-basis: 50.5%;
 }
 
 .search {
-        flex-basis: 33%;
+        flex-basis: 16.5%;
         text-align: right
 }
 
@@ -139,12 +139,24 @@ main {
     padding: 0 0 2vw 0
 }
 
-.news {
+.news, .founderstory {
         flex-basis: 33%
 }
 
-.news img {
-            width: 33%;
+.news .articlecontent img {
+            width: 30%;
+}
+
+.founderstory .articlecontent img {
+            width: 30%;
+}
+
+.ourvisionarticle img {
+            width: 16.5%;
+}
+
+.founderstory img {
+            width: 50%;
 }
 
 .contactushomepage {
