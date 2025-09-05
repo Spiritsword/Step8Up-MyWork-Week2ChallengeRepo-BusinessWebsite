@@ -14,7 +14,7 @@ Unified by art, music, marketing, maths, programming and marketing background, w
 
 # Communication services offered in 3 areas:
 
-Evangelism
+Outreach
 (online mini-games, tracts, videos)
 
 Teaching
@@ -122,9 +122,6 @@ CSS file:
    Display modes
    Section and element dimensions
    Hover pseudoclass
-
-
-#### SPECIFICATION
 
 
 #### SPECIFICATION

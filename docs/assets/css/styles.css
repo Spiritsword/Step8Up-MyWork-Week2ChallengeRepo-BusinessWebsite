@@ -4,8 +4,11 @@
         box-sizing: inherit;
     }
 
+
+/* index.htm CSS */
+
 html {
-    --primary-color: navy;
+    --primary-color: darkblue;
     --secondary-color: lightblue;
     --accent-color: orangered;
     --title-font-family: 'Tahoma', sans-serif;
@@ -22,20 +25,18 @@ html {
             background-color: white;
             color: var(--primary-color);
             box-sizing: border-box;
-            padding: 0 0%;
+            padding: 0;
             font-weight: 400;
-            scroll-behavior: smooth;
-            scroll-padding-top: 17vw;
-
 }
 
 header, footer {
-                    background-color: var(--primary-color); /*var(--primary-color);*/
+                    background-color: var(--primary-color);
                     color: white;
                     width: 100%;
                     padding: 2%
                 }
 
+/* Navigation links are in a three-part horizontal flex-box, "nav". */
                 
 nav {
   display: flex;
@@ -43,17 +44,16 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: var(--secondary-color);
 }
 
+/* The site title (leading to the homepage) is the first link (from left to right). */
 
-
-nav h6 {
-            color: lightblue;
-        }
-
-.sitetitle {
+.sitetitlelink {
             flex-basis: 33%;
 }
+
+/* Page links are next, within a sub-flex-box. */
 
 .pagelinks {
             display: flex;
@@ -63,14 +63,20 @@ nav h6 {
             flex-basis: 50.5%;
 }
 
-.search {
+/* Search is the rightmost link. */
+
+.searchlink {
         flex-basis: 16.5%;
         text-align: right
 }
 
+/* The main section is notionally a 3x3 structure. */
+
 main {
             padding: 0;
 }
+
+/* The top row is a banner image, centrally overlain with the page title.*/
 
 .toprow {
             position: relative;
@@ -87,6 +93,8 @@ main {
     padding: 0;
 }
 
+/* The page title is displayed in the centre of the top banner. */
+
 .pagetitle {
                 z-index: 100;
                 position: absolute;
@@ -95,15 +103,34 @@ main {
                 transform: translate(-50%, -50%);
 }
 
+/* The middle and bottom rows of the 3x3 grid are horizontal flexboxes.
+The service pages have the middle and bottom rows melded and then split vertically (using a flexbox),
+in the proportion 1:2. The right vertical box (class=midandbottomrow) is split horizontally between the case study (above)
+The left box contains a description of the service.
+*/
+
 .midrow, .bottomrow, .midandbottomrow {
                                         display: flex;
                                         flex-direction: row;
                                         justify-content: space-around;
-                                        padding: 2vw
+                                        padding: 2vw;
 }
 
+.news, .founderstory {
+                        flex-basis: 33%;
+}
+
+.news .articlecontent img {
+                            width: 30%;
+}
+
+.copyright {
+            text-align: center;
+}
 
 /* Special formats in particular locations */
+
+/* Service pages CSS */
 
 .descriptionarticle {
                         flex-basis: 33%;
@@ -116,7 +143,7 @@ main {
 }
 
 .descriptionarticlecontent {
-                                padding: 2vw 0 0 0
+                                padding: 2vw 0 0 0;
 }
 
 .servicerightpage {
@@ -139,13 +166,7 @@ main {
                     padding: 0 0 2vw 0
 }
 
-.news, .founderstory {
-                        flex-basis: 33%
-}
-
-.news .articlecontent img {
-                            width: 30%;
-}
+/* About page CSS */
 
 .founderstory .articlecontent img {
                                     width: 30%;
@@ -167,44 +188,50 @@ main {
                                 padding: 2vw 0 0 0
 }
 
+/* Contact us page CSS */
+
 .contactusbig {
                 flex-basis: 100%;
 }
 
-input, textarea, fieldset {
-                    border: 0.1rem solid orangered;
-                    font-size: 0.6rem;
-                    width: 100%;
-                    color: darkblue;
-                    border-radius: 0.4rem;
-}
-
-form {
-        font-family: "Georgia", serif;
-        font-size: 0.6rem;
-        width: 100%;
-        font-weight: 400;
-        color: darkblue;
-        padding: 2vw 0 0 0;
-}
+/* Below is the link formatting for the "Submit" button */
 
 .link   {
             font-family: 'Tahoma', sans-serif;
             padding: 2%;
             font-weight: bold;
-            border-radius: 10 rem;
-            width: 20%;
+            border-radius: 0.5rem;
+            width: 10vw;
             float: right;
-            color: darkblue;
-            background-color: lightblue;
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
             border: none                        
         }
 
-.copyright {
-            text-align: center;
-}
+.link:hover {
+                color: var(--accent-color);
+
+}        
+
 
 /* General formatting */
+
+form {
+        font-family: "Georgia", serif;
+        font-size: 1.5vh;
+        width: 100%;
+        font-weight: 400;
+        color: var(--primary-color);
+        padding: 2vw 0 0 0;
+}
+
+input, textarea, fieldset {
+                            border: 0.1rem solid var(--accent-color);
+                            font-size: 1.5vw;
+                            width: 100%;
+                            color: var(--primary-color);
+                            border-radius: 0.3rem;
+}
 
 .articlecontent {
                     display: flex;
@@ -226,7 +253,7 @@ img {
         margin: 0% 2vw 1vw 0;
         border-style: solid;
         border-width: thin; 
-        border-color: orangered;
+        border-color: var(--accent-color);
 }
 
 a {
@@ -235,11 +262,11 @@ a {
 }
 
 a:hover {
-            color: orangered;
+            color: var(--accent-color);
 }
 
 p {
-    padding: 0 2vw 1vw 0
+    padding: 0 2vw 1vw 0;
 }
 
 label[for=email]::before {
