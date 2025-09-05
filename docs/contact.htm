@@ -41,45 +41,21 @@
             <img src="./assets/images/missing.piece.banner.png" alt="Missing piece game">
             </section>
             <section class="pagetitle">
-                <h1>Outreach</h1>
+                <h1>Contact</h1>
             </section>
         </section>
         
         <!--Bottom two rows are split vertically rather than horizontally
         at top level. First column and then remaining two columns in a group-->
         <section class="midandbottomrow">
-            <article class="descriptionarticle">
-                <h2>Description</h2>
-                <section class="descriptionarticlecontent">
-                    <img src="./assets/images/missing.piece.png" alt="Missing piece game">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium est nobis distinctio hic, porro veritatis. Debitis dolores pariatur iure maxime assumenda. Aliquam vel eos, eum blanditiis corporis distinctio enim iusto?
-                    Maiores dignissimos magni quo qui repellat error iusto repudiandae? Veritatis ipsum cupiditate eveniet. Esse, voluptas blanditiis? Quos, possimus obcaecati? Aut aliquid corporis perspiciatis sunt facere ut, non error distinctio nemo.
-                    </p>
-                    <p>Dolor fugit vel ratione eveniet aut laborum numquam nisi aliquid quo vitae quia quisquam, itaque earum, dolores recusandae corrupti quaerat adipisci aperiam reiciendis incidunt perferendis eum excepturi. Rem, rerum nobis.
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore laboriosam ab, iste rerum natus eius.
-                    Libero ut, enim vel eum maxime itaque possimus eaque velit explicabo distinctio tempora repudiandae necessitatibus?
-                    </p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <p>Exercitationem cum sed dolorem neque quis suscipit quisquam libero et quaerat voluptate?</p>
-                </section>      
-            </article>
-            <section class="servicerightpage">
-                <article class="casestudyarticle">
-                    <h2>Case Study</h2>
-                    <section class="articlecontent">
-                        <img src="./assets/images/greatest.treasure.jpg" alt="Greatest treasure game"> 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsum doloremque eos, animi itaque hic perspiciatis quasi quod quo nesciunt ullam dolorem est facilis placeat soluta saepe possimus id perferendis quam. Cum iure voluptatibus quibusdam reiciendis quisquam illum nostrum modi.
-                        </p>
-                </article>
-                <section class="contactussmall">
+                <section class="contactusbig">
                     <h2>Contact Us</h2>
                     <form id="homepagecontactform">
                         <label for="firstname">First Name:</label>
                         <input type=text id="firstname" name="firstname"></input>
                         <br>
                         <br>
-                        <label for="lastname">Last Name</label>
+                        <label for="lastname">Last Name:</label>
                         <input type=text id="lastname" name="lastname"></input>
                         <br>
                         <br>
@@ -87,7 +63,30 @@
                         <input type=text id="email" name="email"></input>
                         <br>
                         <br>
-                        <textarea rows=3 name="message" form="homepagecontactform">Please leave a message:</textarea>
+                        <label for="phone">Phone:</label>
+                        <input type=text id="phone" name="phone"></input>
+                        <br>
+                        <br>
+                        <fieldset>
+                            <legend> Required service:</legend>
+                            <br>
+                            <br>
+                            <label for="outreach">Outreach</label>
+                            <input type="radio" id="outreach" name="service" value="outreach">
+                            <br>
+                            <br>
+                            <label for="teaching">Teaching</label>
+                            <input type="radio" id="teaching" name="service" value="teaching">
+                            <br>
+                            <br>
+                            <label for="marketing">Marketing</label>
+                            <input type="radio" id="marketing" name="service" value="outreach">
+                            <br>
+                            <br>
+                        </fieldset>
+                        <br>
+                        <br>
+                        <textarea rows=8 name="message" form="homepagecontactform">Please leave a message:</textarea>
                     </form>
                 </section>
         </section>
