@@ -241,3 +241,11 @@ a:hover {
 p {
     padding: 0 2vw 1vw 0
 }
+
+label[for=email]::before {
+    content: "✉ "
+}
+
+label[for=phone]::before {
+    content: "📞"
+}
