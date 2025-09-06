@@ -13,7 +13,7 @@ html {
     --accent-color: orangered;
     --title-font-family: 'Tahoma', sans-serif;
     --bodytext-font-family: 'Georgia', serif;
-    font-size: max(2vw, 10px);
+    font-size: max(2vw, 15px);
     background-color: white;
     color: var(--primary-color);
     box-sizing: border-box;
@@ -44,7 +44,7 @@ nav {
 .sitetitlelink {
             flex-basis: 33%;
             text-wrap: nowrap;
-            margin: 0.1em;
+            margin: 0 0.6em 0 0;
 }
 
 /* Page links are next, within a sub-flex-box. They are aligned centrally */
@@ -55,20 +55,19 @@ nav {
             justify-content: space-around;
             align-items: center;
             flex-basis: 50.5%;
-            margin: 0.1em;
+            text-wrap: nowrap;
 }
 
 .pagelink {
             text-align: center;
-            margin: 0.1em;
+            margin: 0 0.6em 0 0;
 }
 
 /* Search is the rightmost link. */
 
 .searchlink {
-        flex-basis: 16.5%;
         text-align: right;
-        margin: 1vw;
+
 }
 
 /* The main section is notionally a 3x3 structure. */
@@ -115,8 +114,18 @@ The boxes use the flexbox justification, "space-around".
 .midrow, .bottomrow, .midandbottomrow {
                                         display: flex;
                                         flex-direction: row;
-                                        justify-content: space-around;
-                                        padding: 2vw;
+                                        justify-content: start;
+                                        flex-wrap: wrap;
+                                        padding-left: 1rem;
+                                        padding-right: 1rem;
+}
+
+.midrow, .midandbottomrow {
+                            padding-top: 1rem;
+}
+
+.bottomrow, .midandbottomrow {
+                            padding-bottom: 1rem;
 }
 
 .news, .founderstory {
@@ -146,7 +155,8 @@ The boxes use the flexbox justification, "space-around".
 }
 
 .descriptionarticlecontent {
-                                padding: 2vw 0 0 0;
+                                padding: 1rem 0 0 0;
+                                min-width: 300px;
 }
 
 .servicerightpage {
@@ -157,6 +167,11 @@ The boxes use the flexbox justification, "space-around".
                                         flex: 1 1;
 }
 
+.servicearticle {
+                    padding: 0 1rem 1rem 0;
+                    flex: 0 1 33%;
+}
+
 .servicearticle img {
                         width: 50%;
 }
@@ -165,8 +180,8 @@ The boxes use the flexbox justification, "space-around".
                         width: 25.5%;
 }
 
-.casestudyarticle {
-                    padding: 0 0 2vw 0
+.descriptionarticle, .casestudyarticle {
+                    padding: 0 1rem 1rem 0
 }
 
 /* About page CSS */
@@ -187,10 +202,6 @@ The boxes use the flexbox justification, "space-around".
                     flex-basis: 66%;
 }
 
-.contactussmall, .contactusbig {
-                                padding: 2vw 0 0 0
-}
-
 /* Contact us page CSS */
 
 .contactusbig {
@@ -201,27 +212,27 @@ The boxes use the flexbox justification, "space-around".
 
 .link   {
             font-family: 'Tahoma', sans-serif;
+            font-size: 1.1em;
             padding: 2%;
             font-weight: bold;
             border-radius: 0.5rem;
-            width: 10vw;
+            width: 10rem;
             float: right;
             color: var(--primary-color);
             background-color: var(--secondary-color);
-            border: none                        
+            border: none                       
         }
 
 .link:hover {
                 color: var(--accent-color);
 
-}        
-
+}
 
 /* General formatting */
 
 form {
         font-family: "Georgia", serif;
-        ont-size: max(2vw, 10px);
+        font-size: max(2vw, 15px);
         width: 100%;
         font-weight: 400;
         color: var(--primary-color);
@@ -235,12 +246,21 @@ input, textarea, fieldset {
                             border-radius: 0.3rem;
 }
 
+input, textarea {
+                    font-size: max(4vw, 30px)
+}
+
 .articlecontent {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
                     align-items: flex-start;
-                    padding: 2vw 0 0 0
+                    padding: 1rem 0 0 0;
+                    min-width: 300px;
+}
+
+.servicearticle, .news, .contactushomepage, .contactussmall, .founderstory, .ourvisionarticle, .descriptionarticle, .casestudyarticle {
+                                                                                                                 padding: 1rem;       
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -248,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: max(4vw, 20px)
+        font-size: 2em;
 }
 
 img {
@@ -270,9 +290,8 @@ a:hover {
 
 p {
     padding: 0 2vw 1vw 0;
+    min-width: 0;
 }
-
-
 
 label[for=email]::before {
     content: "✉ "
