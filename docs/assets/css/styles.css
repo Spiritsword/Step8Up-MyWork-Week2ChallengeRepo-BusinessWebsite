@@ -233,7 +233,7 @@ form {
 }
 
 input, textarea, fieldset {
-                            border: 0.1rem solid var(--accent-color);
+                            border: thin solid var(--accent-color);
                             font-size: 1.5vw;
                             width: 100%;
                             color: var(--primary-color);
