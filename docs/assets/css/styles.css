@@ -44,6 +44,7 @@ nav {
 .sitetitlelink {
             flex-basis: 33%;
             text-wrap: nowrap;
+            margin: 0.1em;
 }
 
 /* Page links are next, within a sub-flex-box. They are aligned centrally */
@@ -54,21 +55,20 @@ nav {
             justify-content: space-around;
             align-items: center;
             flex-basis: 50.5%;
-            flex-grow: 1;
-            flex-shrink: 1;
+            margin: 0.1em;
 }
 
 .pagelink {
-            min-width: 70px;
             text-align: center;
-            flex: 1 1 auto
+            margin: 0.1em;
 }
 
 /* Search is the rightmost link. */
 
 .searchlink {
         flex-basis: 16.5%;
-        text-align: right
+        text-align: right;
+        margin: 1vw;
 }
 
 /* The main section is notionally a 3x3 structure. */
