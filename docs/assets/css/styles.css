@@ -21,7 +21,7 @@ p {
 }
 
 html {
-            font-size: font-size: max(2vw, 12px);
+            font-size: max(2vw, 10px);
             background-color: white;
             color: var(--primary-color);
             box-sizing: border-box;
@@ -225,7 +225,7 @@ The boxes use the flexbox justification, "space-around".
 
 form {
         font-family: "Georgia", serif;
-        font-size: 1.5vh;
+        ont-size: max(2vw, 10px);
         width: 100%;
         font-weight: 400;
         color: var(--primary-color);
@@ -234,7 +234,6 @@ form {
 
 input, textarea, fieldset {
                             border: thin solid var(--accent-color);
-                            font-size: 1.5vw;
                             width: 100%;
                             color: var(--primary-color);
                             border-radius: 0.3rem;
@@ -244,7 +243,7 @@ input, textarea, fieldset {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
-                    align-items: top;
+                    align-items: flex-start;
                     padding: 2vw 0 0 0
 }
 
@@ -253,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4vw
+    font-size: max(4vw, 20px)
 }
 
 img {
@@ -275,6 +274,7 @@ a:hover {
 
 p {
     padding: 0 2vw 1vw 0;
+    font-size: max(2vw, 10px);
 }
 
 label[for=email]::before {
